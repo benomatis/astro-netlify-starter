@@ -5,11 +5,13 @@ Static Astro site in plain JavaScript, managed with Yarn 4 (`node_modules` linke
 ## Start a new site
 
 ```sh
-gh repo create my-site --private --template <owner>/astro-netlify-starter --clone
+yarn create astro my-site --template benomatis/astro-netlify-starter --no-install --no-git
 cd my-site
 yarn install
 netlify sites:create --name my-site   # or: netlify link
 ```
+
+Or use GitHub's "Use this template" button.
 
 Then set `name` in `package.json`.
 
